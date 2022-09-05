@@ -136,9 +136,7 @@ b {
     color: var(--color-warning);
 }
 
-
-/* --------    ASIDE  top -------- */ 
-
+    /* ---  aside top  --- */ 
 aside {
     height: 100vh;
 } 
@@ -164,7 +162,7 @@ aside .close {
     display: none;
 }
 
-/* --------    ASIDE  sidebar -------- */ 
+    /* ---  aside sidebar   --- */ 
 
 aside .sidebar {
     display: flex;
@@ -253,7 +251,7 @@ main .date input[type="date"] {
     color: var(--color-dark);
 }
 
-    /* ---  INSIGHTS  --- */ 
+    /* ---  insights  --- */ 
 main .insights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -309,7 +307,7 @@ main .insights .progress {
     border-radius: 50%;    
 }
 
-    /* ---  SVG  --- */ 
+    /* ---  svg  --- */ 
 
 main .insights svg {
     width: 7rem;
@@ -355,7 +353,7 @@ main .insights small {
     display: block;
 }
 
-    /* ---  RECENT ORDERS  --- */ 
+    /* ---  recent orders  --- */ 
 
 main .recent-orders {
     margin: 2rem 0 0;
@@ -395,3 +393,47 @@ main .recent-orders a {
     margin: 1rem auto;
     color: var(--color-primary);
 }
+
+/* --------    RIGHT     -------- */ 
+
+    /* ---  right top --- */ 
+.right {
+    margin: 1.4rem 0 0;
+}
+
+.right .top {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right .top button {
+    display: none;
+}
+
+.right .theme-togler {
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right .theme-togler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .theme-togler span.active {
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: var(--border-radius-1);    
+}
+
