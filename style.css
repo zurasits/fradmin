@@ -31,6 +31,16 @@
 
  }
 
+ .dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+ }
+
+
 /* --------    MAIN SETTINGS  -------- */ 
 
  * {
@@ -411,7 +421,7 @@ main .recent-orders a {
     display: none;
 }
 
-.right .theme-togler {
+.right .theme-toggler {
     background: var(--color-light);
     display: flex;
     justify-content: space-between;
@@ -422,7 +432,7 @@ main .recent-orders a {
     border-radius: var(--border-radius-1);
 }
 
-.right .theme-togler span {
+.right .theme-toggler span {
     font-size: 1.2rem;
     width: 50%;
     height: 100%;
@@ -431,7 +441,7 @@ main .recent-orders a {
     justify-content: center;
 }
 
-.right .theme-togler span.active {
+.right .theme-toggler span.active {
     background: var(--color-primary);
     color: #fff;
     border-radius: var(--border-radius-1);    
@@ -528,6 +538,11 @@ main .recent-orders a {
     justify-content: center;
 }
 
+.right .sales-analytics .add-product:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
 .right .sales-analytics .add-product div {
     display: flex;
     align-items: center;
@@ -606,7 +621,7 @@ main .recent-orders a {
 
     aside {
         position: fixed;
-        left: 0;
+        left: -100%;
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
@@ -614,6 +629,13 @@ main .recent-orders a {
         height: 100vh;
         padding: 0 var(--card-padding) 0 0;
         display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
     }
 
     aside .logo {
@@ -645,7 +667,8 @@ main .recent-orders a {
 
     /* ---- main ---- */
     main {
-        margin: 8rem 0 0 0;
+        width: 94%;
+        margin: 0 auto 4rem;
     }
 
     main .recent-orders {
@@ -679,7 +702,7 @@ main .recent-orders a {
         box-shadow: 0 1rem 1rem var(--color-light);
     }
 
-    .right .top .theme-togler {
+    .right .top .theme-toggler {
         width: 4.4rem;
         position: absolute;
         left: 66%;
