@@ -596,7 +596,7 @@ main .recent-orders a {
 }
 
 
-    /* --------     tablet  --------*/
+    /* --------     mobile  --------*/
 
 @media screen and (max-width: 768px) {
     .container {
