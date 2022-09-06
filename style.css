@@ -592,7 +592,7 @@ main .recent-orders a {
     main table tbody tr td:first-child,
     main table tbody tr td:last-child {
         display: none;
-    }   
+    }
 }
 
 
@@ -617,13 +617,13 @@ main .recent-orders a {
     }
 
     aside .logo {
-        margin: 0 0 0 1rem;          
+        margin: 0 0 0 1rem;
     }
-    
+
     aside .logo h2 {
         display: inline;
     }
-    
+
     aside .sidebar h3 {
         display: inline;
     }
