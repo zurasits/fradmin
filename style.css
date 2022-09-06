@@ -645,7 +645,8 @@ main .recent-orders a {
 
     /* ---- main ---- */
     main {
-        margin: 8rem 0 0 0;
+        width: 94%;
+        margin: 0 auto 4rem;
     }
 
     main .recent-orders {
