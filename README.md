@@ -1,8 +1,10 @@
 # fradmin
-frontend admin
 
-the simple admin panel with only HTML, CSS and a little JS
+ადმინ-პანელი მხოლოდ HTML, CSS და JS-ით. 
 
 აქედანაა გადაღებული ჩემი მინიმალისტური სტილისტური ცვლილებებით:
 
 https://www.youtube.com/watch?v=BOF79TAIkYQ
+
+
+მნიშვნელოვანია CSS-ის კუთხით - განსაკუთრებით ანიმაციის, ცვლადების და google-ს ნიშნების და ფონტების გამოყენების კუთხით.
